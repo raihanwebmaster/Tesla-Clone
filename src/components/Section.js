@@ -17,7 +17,7 @@ const Section = ({
         </ItemText>
       {/* </Fade> */}
       <Buttons>
-        {/* <Fade left> */}
+        {/* <Fade bottom> */}
           <ButtonGroup>
             <LeftButton>{leftBtnText}</LeftButton>
             {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
@@ -86,4 +86,10 @@ const DownArrow = styled.img`
   animation: animateDown infinite 1.5s;
 `;
 
-const Buttons = styled.div``;
+const Buttons = styled.div`
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+` 
+  
